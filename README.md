@@ -14,6 +14,7 @@ This game contains flashing lights and fast motion sequences.
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/nQZ601kEDFI/0.jpg)](https://www.youtube.com/watch?v=nQZ601kEDFI)
 
 ## Things that work
+* In level menus
 * Singleplayer
 * 6DoF VR view
 * Motion controls for portal gun and grabbable objects
@@ -21,20 +22,29 @@ This game contains flashing lights and fast motion sequences.
 
 ## Things that need fixing
 * Use the game's own haptic feedback
-* In-game UI is broken
+* In-game hud is broken (planning to redo the hud system to work better with vr)
 * Viewmodel's particle attachment points don't align
 * 6DoF and Roomscale needs to be reimplemented
 * CPU is underutilized
 
 ## How to use
-1. Download [Portal2VR.zip](https://github.com/BurntToast33/portal2vr/releases) and extract the files to your Portal 2 directory (steamapps\common\Portal 2)
+1. Download [Portal2VR.zip](https://github.com/BurntToast33/portal2vr/releases) and extract the files to your Portal 2 directory ```steamapps\common\Portal 2```
 2. Connect your headset, then launch Portal 2 with these launch options:
    
    ``` -vr -insecure -window -novid -width 1280 -height 720 ```
 
-3. At the menu, feel free to change [these video settings](https://i.imgur.com/yYQMXs6.jpg).
-4. Load into a chapter. 
-5. To recenter the camera height, press down on the left stick. To see the HUD, aim the controller up or down.
+   The (-vr) flag can switch between vr mode and desktop mode.
+
+4. At the menu, feel free to change [these video settings](https://i.imgur.com/yYQMXs6.jpg).
+5. Load into a chapter. 
+6. To recenter the camera height, press down on the left stick. To see the HUD, aim the controller up or down.
+
+## How to change vr settings
+Go to ```steamapps\common\Portal 2\VR```
+- Open config.txt for vr settings,
+- Open backgrounds.txt for what background map will be loaded based on where you are in your save file.
+- To rebind controlls go to ```SteamVRActionManifest``` and open the corresponding controller you have and mannualy re-map it.
+  I will look into getting a proper rebinding system once I fix all the curret gameplay bugs
 
 ## Troubleshooting
 If you have no audio:
