@@ -171,7 +171,7 @@ void __fastcall Hooks::dRenderView(void *ecx, void *edx, CViewSetup &setup, CVie
 		CViewSetup EyeView = setup;
 		Vector EyePos = (!I) ? m_VR->GetViewOriginLeft(m_VR->m_SetupOrigin) : m_VR->GetViewOriginRight(m_VR->m_SetupOrigin);
 		SharedTextureHolder* TargetTex = (!I) ? &m_VR->m_LeftEye : &m_VR->m_RightEye;
-		IDirect3DSurface9* TargetSur = (m_VR->m_AntiAliasing) ? TargetTex->m_ResolveSurface : TargetTex->m_Surface;
+		IDirect3DSurface9* TargetSur = (m_VR->m_AntiAliasing) ? TargetTex->m_MSAASurface : TargetTex->m_Surface;
 
 		EyeView.origin = m_VR->TraceEye((uint32_t*)localPlayer, position, EyePos, tempAngle);
 		EyeView.angles.y = tempAngle.y;
