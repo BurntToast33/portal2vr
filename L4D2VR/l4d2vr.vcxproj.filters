@@ -1567,7 +1567,7 @@
     <Text Include="config.txt">
       <Filter>Source Files</Filter>
     </Text>
-    <Text Include="ToDo.txt" />
+    <Text Include="Todo.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\dxvk\src\d3d9\d3d9.def">

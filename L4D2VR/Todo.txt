@@ -1,0 +1,35 @@
+V0.2.2
+Todo:
+- Finish Hud capture
+- Add proper controller remapping mapping
+- Figure out how to resolve MSAA image in dxvk 2.7
+
+
+V0.2.1
+Todo:
+- Fix particle atachment points
+
+
+
+Done:
+- Updated to DXVK 2.7.1 +fps
+
+- Fixed function hook offsets for current portal 2 build ID: 17256505 (2026 build)
+- Fixed crash in sp_a2_bts4.
+- Fixed ending: credits now render to overlay in level.
+- Fixed laser pointer particle crashing on creation.
+- Possibly fixed memory leak due to never releasing old render targets.
+
+- Added 3D backgrounds. (If you want to add custom backgrounds check VR/backgrounds.txt for how it's mapped)
+- Added 3D in level menu.
+- Added a toggle to enable and disable vr mode and assets in launch option. ( -vr )
+- Added a toggle to enable debug console. ( -vrdebug )
+- Added automatic recentering when loading into map.
+- Added error logging from l4d2 branch, sessions will generate vrmod_log.txt.
+
+- Changed: Overlay now spawns based on your vr envrionment's foward when in the main menu.
+- Changed m_RenderWindow setting to copy left eye to backbuffer instead of rendering a third time. +fps
+- Force disabled motion blur in vr mode. +fps
+- Moved mat_ commands from launch args to VR_autoexec.cfg. (located in portal2_dlc3/cfg/VR_autoexec.cfg)
+
+- Replaced Portal Gun: model by SpiritedSpy
