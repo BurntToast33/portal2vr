@@ -21,15 +21,16 @@ This game contains flashing lights and fast motion sequences.
 
 ## Things that need fixing
 * Use the game's own haptic feedback
-* In-game UI and pause menu are broken
+* In-game UI is broken
+* Viewmodel's particle attachment points don't align
 * 6DoF and Roomscale needs to be reimplemented
 * CPU is underutilized
 
 ## How to use
-1. Download [Portal2VR.zip](https://github.com/Gistix/portal2vr/releases) and extract the files to your Portal 2 directory (steamapps\common\Portal 2)
+1. Download [Portal2VR.zip](https://github.com/BurntToast33/portal2vr/releases) and extract the files to your Portal 2 directory (steamapps\common\Portal 2)
 2. Connect your headset, then launch Portal 2 with these launch options:
    
-   ``` -insecure -window -novid +mat_motion_blur_percent_of_screen_max 0 +mat_queue_mode 0 +mat_vsync 0 +mat_antialias 0 +mat_grain_scale_override 0 -width 1280 -height 720 ```
+   ``` -vr -insecure -window -novid -width 1280 -height 720 ```
 
 3. At the menu, feel free to change [these video settings](https://i.imgur.com/yYQMXs6.jpg).
 4. Load into a chapter. 
@@ -68,6 +69,6 @@ Note: After building, it will attempt to copy the new d3d9.dll to your Portal 2/
 * [dxvk](https://github.com/TheIronWolfModding/dxvk/tree/vr-dx9-rel)
 * [source-sdk-2013](https://github.com/ValveSoftware/source-sdk-2013/)
 
-## Support me
+## Support original dev
 <a href="https://www.paypal.com/donate/?business=YL7TGWKPCC9H8&no_recurring=0&currency_code=USD"><img src="https://pics.paypal.com/00/s/MDAwNDljNmUtZWZiZS00ZTI1LWFiMTMtZTdhZmQ5NmU5ZDUx/file.PNG" alt="Donate Button" style="width:auto;height:100px;"></a>
 
